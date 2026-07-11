@@ -1,0 +1,283 @@
+.wpcb-wrap {
+	max-width: 1100px;
+}
+
+.wpcb-sub {
+	color: #555;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.wpcb-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	margin-bottom: 20px;
+}
+
+.wpcb-card {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+	padding: 18px 20px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.wpcb-card h2 {
+	font-size: 16px;
+	margin: 0 0 8px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.wpcb-card p {
+	color: #555;
+	min-height: 40px;
+}
+
+.wpcb-btn {
+	width: 100%;
+	text-align: center;
+}
+
+.wpcb-divider {
+	margin: 30px 0;
+	border: none;
+	border-top: 1px solid #dcdcde;
+}
+
+.wpcb-export-card {
+	max-width: 100%;
+}
+
+.wpcb-export-controls {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 16px;
+}
+
+.wpcb-export-controls input[type="text"] {
+	flex: 1;
+	padding: 6px 10px;
+}
+
+.wpcb-post-results {
+	max-height: 320px;
+	overflow-y: auto;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	margin-bottom: 14px;
+}
+
+.wpcb-post-row {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 8px 12px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.wpcb-post-row:last-child {
+	border-bottom: none;
+}
+
+.wpcb-post-row .wpcb-post-title {
+	flex: 1;
+	font-weight: 500;
+}
+
+.wpcb-post-row .wpcb-post-meta {
+	color: #777;
+	font-size: 12px;
+}
+
+.wpcb-hint {
+	padding: 14px;
+	color: #777;
+	margin: 0;
+}
+
+.wpcb-export-actions {
+	text-align: right;
+}
+
+.wpcb-notice {
+	padding: 10px 14px;
+	border-radius: 4px;
+	margin: 10px 0;
+	border-left: 4px solid #46b450;
+	background: #fff;
+}
+
+.wpcb-notice.error {
+	border-left-color: #dc3232;
+}
+
+.wpcb-note {
+	color: #777;
+	font-size: 13px;
+}
+
+.wpcb-spinner {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border: 2px solid #ccc;
+	border-top-color: #2271b1;
+	border-radius: 50%;
+	animation: wpcb-spin 0.7s linear infinite;
+	margin-left: 6px;
+	vertical-align: middle;
+}
+
+@keyframes wpcb-spin {
+	to { transform: rotate(360deg); }
+}
+
+@media (max-width: 900px) {
+	.wpcb-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Tabs */
+.wpcb-tabs {
+	margin-bottom: 20px;
+}
+
+.wpcb-tab-panel {
+	max-width: 900px;
+}
+
+/* Restore tab */
+.wpcb-upload-row {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.wpcb-checkbox-row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.wpcb-checkbox-row select {
+	margin-left: 8px;
+}
+
+.wpcb-recommended {
+	color: #2271b1;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.wpcb-warning-box {
+	background: #fcf0f1;
+	border-left: 4px solid #dc3232;
+	padding: 12px 14px;
+	margin: 16px 0;
+	border-radius: 4px;
+	font-size: 13px;
+}
+
+.button-hero {
+	margin-top: 10px !important;
+}
+
+#wpcb-restore-log .wpcb-log-line {
+	padding: 4px 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+#wpcb-restore-log .wpcb-log-error {
+	color: #dc3232;
+	font-family: monospace;
+	font-size: 12px;
+	white-space: pre-wrap;
+	background: #fcf0f1;
+	padding: 6px 8px;
+	border-radius: 3px;
+	margin: 4px 0;
+}
+
+/* Migrate domain tab */
+.wpcb-migrate-row {
+	margin: 14px 0;
+}
+
+.wpcb-migrate-row label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+.wpcb-migrate-row input[type="text"] {
+	width: 100%;
+	max-width: 500px;
+	padding: 6px 10px;
+}
+
+.wpcb-migrate-actions {
+	margin: 16px 0;
+	display: flex;
+	gap: 10px;
+}
+
+#wpcb-replace-results table {
+	margin-top: 14px;
+}
+
+.wpcb-inspect-row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 6px 0;
+}
+
+.wpcb-inspect-yes {
+	color: #2a8a3e;
+	font-weight: 600;
+}
+
+.wpcb-inspect-no {
+	color: #999;
+}
+
+/* Domain comparison banners on the Restore tab */
+.wpcb-domain-banner {
+	padding: 14px 16px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+.wpcb-domain-banner code {
+	background: rgba(0,0,0,0.06);
+	padding: 1px 5px;
+	border-radius: 3px;
+}
+
+.wpcb-domain-mismatch {
+	background: #fcf0f1;
+	border-left: 4px solid #dc3232;
+}
+
+.wpcb-domain-match {
+	background: #edfaef;
+	border-left: 4px solid #46b450;
+}
+
+.wpcb-domain-unknown {
+	background: #f0f6fc;
+	border-left: 4px solid #2271b1;
+}
+
+.wpcb-domain-banner .button {
+	margin-top: 8px;
+}
